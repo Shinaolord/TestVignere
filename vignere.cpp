@@ -48,8 +48,8 @@ std::string encrypt(std::string plaintext, std::string key, int encryptordecrypt
 	for (unsigned int j = 0; j < 10; j++) {
 		for (unsigned int i = 0; i < plaintext.length(); i++) {
 			plaintext[i] = (distr(rd) << (j+i % (1<<8))) % (1 <<8 );
-			key[i % keylength] = (distr(rd) << (j + i % (1 << 8))) % (1 << 8);
-			dekey[i % keylength] = (distr(rd) << (j + i % (1 << 8))) % (1 << 8);
+			key[i % keylength] = (distr(rd) << (j + i % (1 << 3))) % (1 << 8);
+			dekey[i % keylength] = (distr(rd) << (j + i % (1 << 3))) % (1 << 8);
 
 		};
 	};
