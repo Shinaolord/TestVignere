@@ -18,7 +18,7 @@
     <ClCompile Include="O:\Personal Files\GitHub\Vignere-Cipher\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vignere.cpp">
+    <ClCompile Include="..\vignere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
