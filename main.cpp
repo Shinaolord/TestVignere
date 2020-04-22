@@ -11,8 +11,8 @@ int main() {
 	std::cout << " Spaces in keys are removed in this implementation. For example, the input (attack at dawn, secret ukey) is a valid\n";
 	std::cout << "Input for plaintext and ukey, respectively, and will be interpreted as (attack at dawn,secretkey) \n";
 	std::cout << " To encrypt, set encryptordecrypt >0. To decrypt, set it <0.\n Press CTRL+Z to exit the program\n\n" << std::endl;
-	std::string plaintext="", ukey="";
-	int enorde=0, ed=0;
+	std::string plaintext = "", ukey = "";
+	int enorde = 0, ed = 0;
 	std::cout << "Please input your message, ukey, and whether to encrypt or decrypt according to the instructions above\n" << std::endl;
 
 	/*
