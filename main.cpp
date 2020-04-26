@@ -14,6 +14,7 @@ int main() {
 	std::string plaintext = "", ukey = "";
 	int enorde = 0, ed = 0;
 	std::cout << "Please input your message, ukey, and whether to encrypt or decrypt according to the instructions above\n" << std::endl;
+	std::cout << plaintext.max_size() <<"=max_size \n"<< std::endl;
 
 	/*
 	THINGS TO IMPLEMENT:
@@ -24,7 +25,11 @@ int main() {
 			the previous entries "a enter b enter c enter" part
 
 	*/
+	std::cout << plaintext.capacity() << " = capacity \n" << std::endl;
+	std::cout << plaintext.length() << "= length \n" << std::endl;
 	while (std::getline(std::cin, plaintext, ',') && std::getline(std::cin, ukey, ',') && std::cin >> enorde) {
+		std::cout << plaintext.capacity()<<" = capacity \n" << std::endl;
+		std::cout << plaintext.length() << "= length \n" <<std::endl;
 		if (enorde > 0) {
 			ed = 1;
 		}

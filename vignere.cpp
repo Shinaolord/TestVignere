@@ -1,8 +1,9 @@
+
 #include <iostream>
 #include <cstdlib>
 #include <string>
 #include <algorithm>
-#include <gsl.h>
+#include "C:/Users/Administrator/.nuget/packages/microsoft.gsl/0.1.2.1/build/native/include/gsl.h"
 //#include <random>
 std::string encrypt(std::string plaintext, std::string key, int encryptordecrypt) {
 	std::string ciphertext = "";

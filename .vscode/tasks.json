@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CL.exe build",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                "/FC",
+                "/t:build",
+                "/O2",
+                "/Zi",
+                "/TP",
+                "/MT",
+                "/J",
+                "/EHsc",
+                "/Fe:",
+                "${fileDirname}\\VSCODETest.exe",
+                "${workspaceFolder}//*.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {},
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
